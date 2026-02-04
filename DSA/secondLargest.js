@@ -1,17 +1,22 @@
-let arr = [73,95,25,907,165,375,187,26,948];
+let arr = [73, 95, 25, 907, 165, 375, 187, 26, 948]; // second largest
 
-let highestNumber = -Infinity;
-let secondHighest = -Infinity;
+let arr2 = [734, 2873, 2764, 21823, 384, 2376]; // second largest
 
-for(let i=0; i<= arr.length; i++){
-    if(highestNumber < arr[i]){
-        secondHighest = highestNumber;
-        highestNumber = arr[i];
-        
-    }else if(secondHighest < arr[i] && secondHighest != highestNumber){
-        secondHighest = arr[i]
+function findSecondLargestNumber(numberOfArray) {
+  let highestNumber = -Infinity;
+  let secondHighest = -Infinity;
+
+  for (let i = 0; i <= numberOfArray.length; i++) {
+    if (highestNumber < numberOfArray[i]) {
+      secondHighest = highestNumber;
+      highestNumber = numberOfArray[i];
+    } else if (secondHighest < numberOfArray[i] && secondHighest != highestNumber) {
+      secondHighest = numberOfArray[i];
     }
+  }
+  console.log("highest for ", highestNumber);
+  console.log("second highest", secondHighest);
 }
 
-console.log('highest', highestNumber);
-console.log('second highest', secondHighest)
+findSecondLargestNumber(arr);
+findSecondLargestNumber(arr2);

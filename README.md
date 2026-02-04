@@ -20,3 +20,9 @@ This Repo For Javascipt and Typescript
 9. create a file demo.ts
 
 10. compile the .ts file:   tsc <file name>.ts
+
+11. you can using tsc <file Name>.ts --watch to keep updating/convrting ts to js
+
+12. use tsc command to convert all the ts files into js
+
+13. FINAL DECISION=> tsc --watch 
