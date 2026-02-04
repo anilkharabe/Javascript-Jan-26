@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* Project Structure */
+    // "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Language */
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+
+    /* Strictness */
+    "strict": false,
+    "noImplicitAny": true,
+
+    /* Output */
+    // "sourceMap": true,
+
+    /* Safety */
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  // "include": ["src"]
+}
