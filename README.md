@@ -15,6 +15,8 @@ This Repo For Javascipt and Typescript
 
 7. npm install -g typescript
 
+7.1 run tsc --init to generate default ts config file
+
 8. check if typescript installed or nor: tsc -v
 
 9. create a file demo.ts
