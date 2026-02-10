@@ -1,5 +1,5 @@
 let arr = [7, 8, 63, 20, 65, 21, 983];
-// let number: number = 7;
+let number = 200;
 // index / -1
 // indexof
 // normal function
