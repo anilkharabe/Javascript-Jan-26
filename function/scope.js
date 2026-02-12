@@ -1,9 +1,11 @@
 let a = 10;
 let b = 20;
+var test = 100;
 
 function sayHello(){
     let a =20;    
     console.log('a', a); //10
+    console.log('test', test)
 
 
     function childFunc(){
