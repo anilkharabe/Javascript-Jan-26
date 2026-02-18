@@ -10,3 +10,5 @@ basicFunction('Rahul'); // argument
 basicFunction('Mohit');
 basicFunction('Ankita');
 basicFunction('Shweta');
+
+basicFunction('Manoj')
