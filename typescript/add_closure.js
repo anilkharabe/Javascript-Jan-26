@@ -19,3 +19,4 @@ const result1 =  add(10, 20); // 30 // normal function
 const result2 =  add(10)(20);
 // console.log('result2', result2)
 
+// testing
