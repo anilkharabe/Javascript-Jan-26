@@ -13,3 +13,9 @@ while(myNum > 0){
 }
 
 console.log('reverseNum', reverseNum)
+
+
+function abd(){
+    
+console.log('hey there')
+}

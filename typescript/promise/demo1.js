@@ -8,7 +8,7 @@ let c;
 c = a + b;
 console.log('c', c);
 
-//promise 100 ms
+//promise 100 ms 
 axios.get('https://jsonplaceholder.typicode.com/todos')
     .then((response)=>{
         console.log('response', response.data)
