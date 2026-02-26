@@ -1,3 +1,5 @@
+
+
 function promise1(){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
@@ -24,7 +26,7 @@ function promise3(){
 
 
 // 
-Promise.all([promise3(), promise1(), promise2()])
+Promise.allSettled([promise3(), promise1(), promise2()])
     .then((res)=>{
         console.log('res', res)
     })

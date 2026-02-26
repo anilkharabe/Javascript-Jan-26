@@ -2,32 +2,42 @@ function promise1(){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
             resolve('Promise 1 resolved')
-        }, 5000)
+        }, 2000)
     })
 }
 
 function promise2(){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-            resolve('Promise 2 resolve')
-        }, 1000)
+            resolve('Promise 2 resolved')
+        }, 4000)
     })
 }
 
 function promise3(){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-            reject('Promise 3 rejected')
+            resolve('Promise 3 resolved')
         }, 3000)
     })
 }
 
 
-// 
-Promise.all([promise3(), promise1(), promise2()])
+// indepedent promises
+
+promise1()
     .then((res)=>{
-        console.log('res', res)
+        console.log('promise 1=> res 1: ', res);
     })
-    .catch((e)=>{
-        console.error('e', e)
+
+
+promise2()
+    .then((res)=>{
+        console.log('promise 2=> res 2: ', res);
+    })
+
+
+promise3()
+    .then((res)=>{
+        console.log('promise 3=> res 3: ', res);
     })
