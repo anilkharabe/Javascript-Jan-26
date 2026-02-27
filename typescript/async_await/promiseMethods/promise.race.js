@@ -25,11 +25,21 @@ function promise3(){
 }
 
 
+async function promiseRace(){
+    let res = await Promise.race([promise1(), promise2(), promise3()]);
+    console.log('response', res);
+    // console.log('res2', res2)
+    // console.log('res3', res3)
+}
+
+promiseRace();
+
+
 // first promise that settles(either fullfiled or rejected)
-Promise.race([promise3(), promise1(), promise2()])
-    .then((res)=>{
-        console.log('res:', res)
-    })
-    .catch((e)=>{
-        console.error('e', e)
-    })
+// Promise.race([promise3(), promise1(), promise2()])
+//     .then((res)=>{
+//         console.log('res:', res)
+//     })
+//     .catch((e)=>{
+//         console.error('e', e)
+//     })
