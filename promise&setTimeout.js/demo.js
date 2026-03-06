@@ -1,31 +1,35 @@
-setTimeout(()=>{
-    console.log('this is my settimeout - 0')
-})
+console.log(1);
+console.log(2);
 
-const myPromise  =  new Promise((resolve, reject)=>{
-    resolve('This is coming from promise -1')
+setTimeout(() => {
+ console.log(3);
+}, 0);
+
+setTimeout(() => {
+ console.log(4);
+}, 100);
+
+setTimeout(() => {
+ console.log(5);
+}, 0);
+
+new Promise((resolve) => {
+    console.log(6);
+    resolve(console.log('promise 1'));
 });
 
-const myPromise2 =  new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        resolve('This is coming from promise - 2')
-    })
+new Promise((resolve) => {
+ setTimeout(() => {
+   console.log(7);
+       resolve(console.log('promise 2'));
+ }, 0);
 });
 
-setTimeout(()=>{
-    Promise.resolve(console.log('this is promise -3'));
-})
+new Promise((resolve) => {
+ setTimeout(() => {
+   console.log(8);
+    resolve(console.log('promise 3'));
+ }, 100);
+});
 
-
-
-myPromise.then((response)=>{
-    console.log('response 1:', response)
-})
-
-myPromise2.then((response)=>{
-    console.log('response 2:', response)
-})
-
-// promise 1
-// 2
-// 0
+console.log(9);
