@@ -1,7 +1,4 @@
-const numbers = [
-  -384, -87, -21, 12, 1276, 247, 1625, -3437, 623, 98, 623, -87, 27, 87, 247,
-  12, -21,
-];
+const numbers = [-384, -87, -21, 12, 1276, 247, 1625, -3437, 623, 98, 623, -87, 27, 87, 247, 12, -21];
 
 function findMax() {
   const max = numbers.reduce((currentMax, currentElement) => {
@@ -28,6 +25,8 @@ function findMax() {
 //     console.log('Pune')
 // }
 
+
+
 /*
 expected object
 
@@ -41,15 +40,15 @@ expected object
 */
 function countOccurrence() {
   const repeatedNumberObj = numbers.reduce((acc, currentElement) => {
-    acc[currentElement]
-      ? (acc[currentElement] += 1)
-      : (acc[currentElement] = 1);
+    // acc[currentElement]
+    //   ? (acc[currentElement] += 1)
+    //   : (acc[currentElement] = 1);
 
-    // if(acc[currentElement]){
-    //   acc[currentElement] += 1;
-    // }else{
-    //   acc[currentElement] = 1;
-    // }
+    if(acc[currentElement]){
+      acc[currentElement] += 1;
+    }else{
+      acc[currentElement] = 1;
+    }
 
     return acc;
   }, {});
