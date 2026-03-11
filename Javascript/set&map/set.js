@@ -4,6 +4,7 @@
 // create new Set
 const set = new Set([1, 2, 3, 4, 5, 5]);
 
+console.log("set", )
 
 set.add(6);
 console.log('set', set)
@@ -26,6 +27,7 @@ console.log('setwithObject',setwithObject)
 
 
 const arr = [3,4,5,2,3,5,67,8,9,10,11];
+
 const uniqueArray = [...new Set(arr)]
 
 console.log('uniqueArray', uniqueArray)
