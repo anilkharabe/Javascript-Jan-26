@@ -1,0 +1,52 @@
+body{
+    height: 3000px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    color: aqua;
+}
+
+.absolute-container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
+}
+
+.absolute{
+    position: absolute;
+    background-color: blue;
+    top: 50px;
+    left: 50px;
+
+}
+
+.relative{
+    background-color: darkgoldenrod;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+
+.static{
+    position: static;
+    background-color: brown;
+}
+
+.sticky{
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+    right: 0;
+}
+
+.fixed{
+    background-color: burlywood;
+    position: fixed;
+    bottom: 0;
+    top:400px;
+    right: 0;
+}
