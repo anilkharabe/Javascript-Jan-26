@@ -1,0 +1,28 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.box-1{
+    top:120px;
+    left: 120px;
+    z-index: 1;
+    background-color: green;
+}
+
+.box-2{
+    top:180px;
+    left: 180px;
+    z-index: 5;
+    background-color: red;
+}
+
+.box-3{
+    top:240px;
+    left: 240px;
+    z-index: 3;
+    background-color: chocolate;
+}

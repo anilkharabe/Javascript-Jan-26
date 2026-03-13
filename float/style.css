@@ -1,0 +1,46 @@
+header, footer{
+    background-color: #d1d1d1;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+ul{
+ display: flex;
+    justify-content: space-evenly;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    background-color: aqua !important;
+    clear: both;
+}
+
+header h2{
+    color:purple;
+}
+
+nav > ul > li{
+    list-style: none;
+}
+
+nav > ul > section >li{
+    list-style: circle;
+}
+
+header:hover, footer:hover{
+    background-color: black;
+    color: white;
+}
+
+nav > ul > li:first-child{
+    background-color: #da6363;
+}
