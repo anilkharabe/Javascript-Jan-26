@@ -1,0 +1,5 @@
+.manual-display{
+    font-size: calc(2.625rem + 6.5vw);
+    font-weight: 500;
+    line-height: 1.2;
+}
