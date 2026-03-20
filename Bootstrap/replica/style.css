@@ -67,3 +67,72 @@
     border-left: #04AA6D solid 5px;
     background-color: white;
 }
+
+.other-lang-containers{
+    background-color: rgb(57, 56, 56);
+}
+
+.mid-level-courses{
+    padding: 30px 40px;
+}
+
+.mid-level-course{
+    margin-top: 50px;
+}
+
+.type_a{
+    background-color: rgb(248, 199, 199);
+}
+
+.type_b{
+    background-color: rgb(255, 232, 140);
+}
+
+.type_c{
+    background-color: rgb(212, 254, 172);
+}
+
+.type_d{
+    background-color: rgb(174, 218, 252);
+}
+
+.type_e{
+    background-color: rgb(236, 190, 250);
+}
+
+.type_f{
+    background-color: rgb(252, 188, 200);
+}
+.mid-level-content{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.course-btn{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 150px;
+    padding:15px
+}
+
+.backend-level-courses{
+    padding: 70px 40px;
+}
+
+.backend-level-content{
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.small-level-content{
+    width: 80%;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.sign-up-container{
+    background-color: #D9EEE1!important;
+}
