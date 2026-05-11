@@ -1,3 +1,4 @@
+"use strict";
 // function declaration
 function basicFunction(name) {
     console.log('hello ', name);
@@ -7,3 +8,4 @@ basicFunction('Rahul'); // argument
 basicFunction('Mohit');
 basicFunction('Ankita');
 basicFunction('Shweta');
+basicFunction('Manoj');

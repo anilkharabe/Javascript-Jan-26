@@ -1,3 +1,4 @@
+"use strict";
 const students = [
     {
         id: 1,
