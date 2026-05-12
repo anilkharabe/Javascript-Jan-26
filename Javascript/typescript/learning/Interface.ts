@@ -29,3 +29,19 @@ console.log(userInterfaceEx); // Output: { name: 'Alex', email: '
 
 
 console.log(addressInterfaceEx); // Output: { city: 'New York', country: 'USA', pincode: 10001 }
+
+interface User {
+    firstName: string;
+    lastName: string;
+    address: {
+        city: string;
+        country: string;
+        pincode: number;
+    };
+}
+
+interface User2 {
+    firstName: string;
+    lastName: string;
+    address: AddressInterface
+}
